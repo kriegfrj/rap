@@ -56,6 +56,8 @@ public class RoboProcessor extends AbstractProcessor {
     addValidator(new ResetterValidator(model, env));
   }
 
+  private boolean generated = false;
+  
   @Override
   public boolean process(Set<? extends TypeElement> annotations,
       RoundEnvironment roundEnv) {
@@ -68,9 +70,10 @@ public class RoboProcessor extends AbstractProcessor {
       }
     }
     
-    if (roundEnv.processingOver()) {
+    if (!generated) {
       model.prepare();
       render();
+      generated = true;
     }
     return true;
   }
