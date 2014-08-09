@@ -40,7 +40,9 @@ Constraints currently enforced by RAP are:
 
 #### In-editor error feedback
 
-As an added bonus, when RAP reports an error to its tooling environment, the tooling environment will give feedback on where in the source the error is. In Eclipse (and presumably other modern IDEs like IntelliJ), errors detected by RAP will be reported in the editor with the standard error markers, and mouse-overing them will tell you what the error is. This typically happens immediately when you save a document.
+As an added bonus, when RAP reports an error to its tooling environment, the tooling environment will give feedback on where in the source the error is. In Eclipse (and presumably other modern IDEs like IntelliJ), errors detected by RAP will be reported in the editor with the standard error markers, and mouse-overing them will tell you what the error is. This typically happens immediately when you save a document. See the screenshot for an example in Eclipse:
+
+![@RealObject annotation error screenshot](https://raw.githubusercontent.com/kriegfrj/rap/master/images/RealObject-error.png)
 
 ### Better runtime performance
 
